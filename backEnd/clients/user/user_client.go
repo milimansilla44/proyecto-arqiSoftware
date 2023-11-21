@@ -1,8 +1,8 @@
 package user
 
 import (
-	"github.com/belenaguilarv/proyectoArqSW/backEnd/dto"
-	"github.com/belenaguilarv/proyectoArqSW/backEnd/model"
+	"github.com/milimansilla44/proyecto-arqiSoftware/tree/master/backEnd/dto"
+	"github.com/milimansilla44/proyecto-arqiSoftware/tree/master/backEnd/model"
 
 	log "github.com/sirupsen/logrus"
 	"gorm.io/gorm"

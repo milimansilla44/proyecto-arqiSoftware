@@ -1,11 +1,11 @@
 package db
 
 import (
-	orderClient "github.com/belenaguilarv/proyectoArqSW/backEnd/clients/order"
-	orderDetailClient "github.com/belenaguilarv/proyectoArqSW/backEnd/clients/orderDetail"
-	productClient "github.com/belenaguilarv/proyectoArqSW/backEnd/clients/product"
-	userClient "github.com/belenaguilarv/proyectoArqSW/backEnd/clients/user"
-	"github.com/belenaguilarv/proyectoArqSW/backEnd/model"
+	orderClient "github.com/milimansilla44/proyecto-arqiSoftware/tree/master/backEnd/clients/order"
+	orderDetailClient "github.com/milimansilla44/proyecto-arqiSoftware/tree/master/backEnd/clients/orderDetail"
+	productClient "github.com/milimansilla44/proyecto-arqiSoftware/tree/master/backEnd/clients/product"
+	userClient "github.com/milimansilla44/proyecto-arqiSoftware/tree/master/backEnd/clients/user"
+	"github.com/milimansilla44/proyecto-arqiSoftware/tree/master/backEnd/model"
 
 	log "github.com/sirupsen/logrus"
 	"gorm.io/driver/mysql"

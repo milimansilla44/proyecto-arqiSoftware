@@ -1,12 +1,12 @@
 package app
 
 import (
-	orderDetailController "github.com/belenaguilarv/proyectoArqSW/backEnd/controllers/orderDetail"
-	productController "github.com/belenaguilarv/proyectoArqSW/backEnd/controllers/product"
+	orderDetailController "github.com/milimansilla44/proyecto-arqiSoftware/tree/master/backEnd/controllers/orderDetail"
+	productController "github.com/milimansilla44/proyecto-arqiSoftware/tree/master/backEnd/controllers/product"
 
-	userController "github.com/belenaguilarv/proyectoArqSW/backEnd/controllers/user"
+	userController "github.com/milimansilla44/proyecto-arqiSoftware/tree/master/backEnd/controllers/user"
 
-	orderController "github.com/belenaguilarv/proyectoArqSW/backEnd/controllers/order"
+	orderController "github.com/milimansilla44/proyecto-arqiSoftware/tree/master/backEnd/controllers/order"
 
 	log "github.com/sirupsen/logrus"
 )

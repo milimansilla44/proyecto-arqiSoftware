@@ -1,7 +1,7 @@
 package product
 
 import (
-	"github.com/belenaguilarv/proyectoArqSW/backEnd/model"
+	"github.com/milimansilla44/proyecto-arqiSoftware/tree/master/backEnd/model"
 	log "github.com/sirupsen/logrus"
 	"gorm.io/gorm"
 )

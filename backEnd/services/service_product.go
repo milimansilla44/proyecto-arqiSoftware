@@ -1,10 +1,10 @@
 package services
 
 import (
-	productCliente "github.com/belenaguilarv/proyectoArqSW/backEnd/clients/product"
-	"github.com/belenaguilarv/proyectoArqSW/backEnd/dto"
-	e "github.com/belenaguilarv/proyectoArqSW/backEnd/errors"
-	"github.com/belenaguilarv/proyectoArqSW/backEnd/model"
+	productCliente "github.com/milimansilla44/proyecto-arqiSoftware/tree/master/backEnd/clients/product"
+	"github.com/milimansilla44/proyecto-arqiSoftware/tree/master/backEnd/dto"
+	e "github.com/milimansilla44/proyecto-arqiSoftware/tree/master/backEnd/errors"
+	"github.com/milimansilla44/proyecto-arqiSoftware/tree/master/backEnd/model"
 
 	"strings"
 )

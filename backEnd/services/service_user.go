@@ -1,12 +1,12 @@
 package services
 
 import (
-	userCliente "github.com/belenaguilarv/proyectoArqSW/backEnd/clients/user"
-	"github.com/belenaguilarv/proyectoArqSW/backEnd/dto"
-	crypto "github.com/belenaguilarv/proyectoArqSW/backEnd/encriptado"
-	e "github.com/belenaguilarv/proyectoArqSW/backEnd/errors"
-	"github.com/belenaguilarv/proyectoArqSW/backEnd/model"
 	"github.com/golang-jwt/jwt"
+	userCliente "github.com/milimansilla44/proyecto-arqiSoftware/tree/master/backEnd/clients/user"
+	"github.com/milimansilla44/proyecto-arqiSoftware/tree/master/backEnd/dto"
+	crypto "github.com/milimansilla44/proyecto-arqiSoftware/tree/master/backEnd/encriptado"
+	e "github.com/milimansilla44/proyecto-arqiSoftware/tree/master/backEnd/errors"
+	"github.com/milimansilla44/proyecto-arqiSoftware/tree/master/backEnd/model"
 )
 
 type userService struct{}

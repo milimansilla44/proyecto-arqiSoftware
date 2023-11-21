@@ -1,4 +1,4 @@
-module github.com/belenaguilarv/proyectoArqSW/backEnd
+module github.com/milimansilla44/proyecto-arqiSoftware/tree/master/backEnd
 
 go 1.18
 

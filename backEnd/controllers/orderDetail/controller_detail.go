@@ -4,9 +4,9 @@ import (
 	"net/http"
 	"strconv"
 
-	"github.com/belenaguilarv/proyectoArqSW/backEnd/dto"
+	"github.com/milimansilla44/proyecto-arqiSoftware/tree/master/backEnd/dto"
 
-	service "github.com/belenaguilarv/proyectoArqSW/backEnd/services"
+	service "github.com/milimansilla44/proyecto-arqiSoftware/tree/master/backEnd/services"
 
 	"github.com/gin-gonic/gin"
 	log "github.com/sirupsen/logrus"

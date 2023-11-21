@@ -1,10 +1,10 @@
 package services
 
 import (
-	orderDetailCliente "github.com/belenaguilarv/proyectoArqSW/backEnd/clients/orderDetail"
-	"github.com/belenaguilarv/proyectoArqSW/backEnd/dto"
-	e "github.com/belenaguilarv/proyectoArqSW/backEnd/errors"
-	"github.com/belenaguilarv/proyectoArqSW/backEnd/model"
+	orderDetailCliente "github.com/milimansilla44/proyecto-arqiSoftware/tree/master/backEnd/clients/orderDetail"
+	"github.com/milimansilla44/proyecto-arqiSoftware/tree/master/backEnd/dto"
+	e "github.com/milimansilla44/proyecto-arqiSoftware/tree/master/backEnd/errors"
+	"github.com/milimansilla44/proyecto-arqiSoftware/tree/master/backEnd/model"
 )
 
 type orderDetailService struct{}
@@ -40,7 +40,7 @@ func (s *orderDetailService) GetOrderDetailById(id int) (dto.OrderDetailDto, e.A
 	return orderDetailDto, nil
 }
 
-//get array
+// get array
 func (s *orderDetailService) GetOrderDetails() (dto.OrderDetailsDto, e.ApiError) {
 
 	var orderDetails model.OrderDetails = orderDetailCliente.GetOrderDetails()

@@ -1,11 +1,11 @@
 package services
 
 import (
-	orderCliente "github.com/belenaguilarv/proyectoArqSW/backEnd/clients/order"
-	orderDetailCliente "github.com/belenaguilarv/proyectoArqSW/backEnd/clients/orderDetail"
-	"github.com/belenaguilarv/proyectoArqSW/backEnd/dto"
-	e "github.com/belenaguilarv/proyectoArqSW/backEnd/errors"
-	"github.com/belenaguilarv/proyectoArqSW/backEnd/model"
+	orderCliente "github.com/milimansilla44/proyecto-arqiSoftware/tree/master/backEnd/clients/order"
+	orderDetailCliente "github.com/milimansilla44/proyecto-arqiSoftware/tree/master/backEnd/clients/orderDetail"
+	"github.com/milimansilla44/proyecto-arqiSoftware/tree/master/backEnd/dto"
+	e "github.com/milimansilla44/proyecto-arqiSoftware/tree/master/backEnd/errors"
+	"github.com/milimansilla44/proyecto-arqiSoftware/tree/master/backEnd/model"
 )
 
 type orderService struct{}
