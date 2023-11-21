@@ -10,8 +10,8 @@ import (
 
 var Db *gorm.DB
 
-func GetOrderById(id int) model.Order {
-	var order model.Order
+func GetOrderById(id int) model.OrderTable {
+	var order model.OrderTable
 
 	Db.Where("id = ?", id).First(&order)
 	log.Debug("Order: ", order)
@@ -28,7 +28,7 @@ func GetOrders() model.Orders {
 	return orders
 }
 func UpdateMontoFinal(monto float32, id_Order int) {
-	result := Db.Model(&model.Order{}).Where("id = ?", id_Order).Update("total_price", monto)
+	result := Db.Model(&model.OrderTable{}).Where("id = ?", id_Order).Update("total_price", monto)
 
 	if result.Error != nil {
 		log.Error("Order no encontrada")
@@ -37,7 +37,7 @@ func UpdateMontoFinal(monto float32, id_Order int) {
 	return
 }
 
-func InsertOrder(order model.Order) model.Order {
+func InsertOrder(order model.OrderTable) model.OrderTable {
 	var ahora time.Time
 	ahora = time.Now()
 	order.Date = ahora.Format(time.RFC1123)
@@ -63,7 +63,7 @@ func InsertOrderDetail(order_detail model.OrderDetail) model.OrderDetail {
 	return order_detail
 }
 func DeleteOrderById(id int) {
-	var order model.Order
+	var order model.OrderTable
 	result := Db.Where("id = ?", id).Delete(&order)
 
 	if result.Error != nil {

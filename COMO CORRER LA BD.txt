@@ -3,7 +3,7 @@ correr los siguiente comendos en terminal powershell
 Antes eliminar cualquier imagen de mysql que haya
 
 	->docker run -d -p 33060:3306 --name mysql-db -e MYSQL_ROOT_PASSWORD=secret mysql
-	->docker rm -f mysql-db
+	//->docker rm -f mysql-db
 	->docker volume prune (seleccionan yes)
 	->docker volume create mysql-db-data
 	->docker run -d -p 33060:3306 --name mysql-db  -e MYSQL_ROOT_PASSWORD=secret --mount src=mysql-db-data,dst=/var/lib/mysql mysql

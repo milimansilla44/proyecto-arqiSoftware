@@ -38,7 +38,7 @@ func StartDbEngine() {
 
 	db.AutoMigrate(&model.Product{})
 	db.AutoMigrate(&model.User{}) // crea una tabla en plural de "user" o la usa si esta creada
-	db.AutoMigrate(&model.Order{})
+	db.AutoMigrate(&model.OrderTable{})
 	db.AutoMigrate(&model.Category{})
 	db.AutoMigrate(&model.OrderDetail{})
 

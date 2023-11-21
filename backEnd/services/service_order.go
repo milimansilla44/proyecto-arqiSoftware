@@ -31,7 +31,7 @@ func init() {
 
 func (s *orderService) GetOrderById(id int) (dto.OrderDto, e.ApiError) {
 
-	var order model.Order = orderCliente.GetOrderById(id)
+	var order model.OrderTable = orderCliente.GetOrderById(id)
 	var orderDto dto.OrderDto
 
 	if order.Id == 0 {
@@ -108,7 +108,7 @@ func (s *orderService) GetOrdersWithDetails() (dto.OrdersWithDetailsDto, e.ApiEr
 }
 
 func (s *orderService) GetOrderWithDetailsById(id int) (dto.OrderWithDetailsDto, e.ApiError) {
-	var order model.Order = orderCliente.GetOrderById(id)
+	var order model.OrderTable = orderCliente.GetOrderById(id)
 	var details model.OrderDetails = orderDetailCliente.GetOrderDetails()
 
 	var orderwithdetailsDto dto.OrderWithDetailsDto
@@ -148,7 +148,7 @@ func (s *orderService) InsertOrder(orderwithdetailsDto dto.OrderWithDetailsDto) 
 
 	//recibe de order: date, user_id y de los detalles: quantity, price, product_id
 
-	var order model.Order
+	var order model.OrderTable
 	var detailsssDto dto.OrderDetailsDto
 
 	order.UserId = orderwithdetailsDto.UserId
@@ -200,7 +200,7 @@ func (s *orderService) InsertOrder(orderwithdetailsDto dto.OrderWithDetailsDto) 
 
 func (s *orderService) DeleteOrder(id int) (dto.OrderWithDetailsDto, e.ApiError) {
 
-	var order model.Order = orderCliente.GetOrderById(id)
+	var order model.OrderTable = orderCliente.GetOrderById(id)
 	var details model.OrderDetails = orderDetailCliente.GetOrderDetails()
 
 	var orderwithdetailsDto dto.OrderWithDetailsDto
