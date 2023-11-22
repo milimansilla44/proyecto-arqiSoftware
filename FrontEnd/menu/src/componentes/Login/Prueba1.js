@@ -1,7 +1,7 @@
 
 import React,{ useState} from "react";
 import "./Prueba1.css";
-import Cookies from "universal-cookie";
+import Cookies from 'universal-cookie';
 import {CookieUser} from "../cookies/cookiesUser"
 import swal from "sweetalert2";
 const Cookie = new Cookies();

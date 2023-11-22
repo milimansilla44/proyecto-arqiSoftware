@@ -60,7 +60,6 @@ func LoginUser(c *gin.Context) {
 
 	if er != nil {
 		c.JSON(er.Status(), er)
-		c.JSON(http.StatusBadRequest, er.Error())
 		return
 	}
 

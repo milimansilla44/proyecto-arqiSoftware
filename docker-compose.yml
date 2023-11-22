@@ -13,7 +13,6 @@ services:
     container_name: "proyect_backend"
     build:
       context: ./backEnd
-      dockerfile: backEnd.dockerfile
     ports:
      - "8090:8090"
     depends_on:
@@ -24,7 +23,6 @@ services:
     container_name: "proyect_frontend"
     build: 
       context: ./FrontEnd
-      dockerfile: FrontEnd.dockerfile
     ports:
      - "3000:3000"
     volumes:
